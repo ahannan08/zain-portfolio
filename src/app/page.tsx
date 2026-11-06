@@ -1,3 +1,4 @@
+import { AboutMe } from "@/components/AboutMe";
 import { Clients } from "@/components/Clients";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
@@ -14,8 +15,9 @@ export default function Home() {
       <Nav brandName={content.brand.name} links={content.nav} />
       <main>
         <Hero hero={content.hero} marquee={content.marquee} />
-        <Services services={content.services} />
+        <AboutMe about={content.about} />
         <Metrics metrics={content.metrics} />
+        <Services services={content.services} />
         <Why why={content.why} />
         <Clients clients={content.clients} />
         <Testimonials testimonials={content.testimonials} />

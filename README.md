@@ -13,4 +13,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Edit content
 
-Update `content/site.json` — nav, hero, services, metrics, clients, testimonials, footer, and brand details. Types are in `src/types/site.ts`.
+Update `content/site.json` — nav, hero, **about** (bio + cards), **metrics**, services, **why**, clients, testimonials, footer, and brand details. Replace `public/about-portrait.svg` with your photo (same path or update `about.image` in JSON). Types are in `src/types/site.ts`.

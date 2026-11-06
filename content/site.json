@@ -39,8 +39,8 @@
     "Analytics"
   ],
   "services": {
-    "heading": "Everything your brand needs to get found and chosen",
-    "lead": "Six services, one team, one set of goals.",
+    "heading": "Our services",
+    "lead": "Ads, SEO, sites and design — built to work together.",
     "items": [
       {
         "icon": "google-ads",
@@ -74,6 +74,59 @@
       }
     ]
   },
+  "about": {
+    "heading": "About me",
+    "lead": "Growth marketer and builder — I run campaigns, ship sites, and wire tracking so you see the full picture.",
+    "paragraphs": [
+      "I've spent the last several years helping brands turn search and paid media into steady leads, then making sure those leads land on pages that actually convert.",
+      "When I'm not in ad accounts or Analytics, I'm sketching flows in Figma or pushing clean Next.js builds. One thread through it all: fewer hand-offs, clearer numbers."
+    ],
+    "image": {
+      "src": "/about-portrait.svg",
+      "alt": "Portrait placeholder — replace with your photo"
+    },
+    "cards": [
+      {
+        "type": "stat",
+        "title": "Experience",
+        "value": "6+ years",
+        "hint": "Across ads, SEO, web and product UI"
+      },
+      {
+        "type": "tags",
+        "title": "Skills",
+        "tags": [
+          "Google Ads",
+          "SEO",
+          "Next.js",
+          "UI/UX",
+          "Analytics",
+          "Conversion tracking"
+        ]
+      },
+      {
+        "type": "list",
+        "title": "Education & certs",
+        "items": [
+          {
+            "primary": "Digital marketing & communications",
+            "secondary": "Bachelor's (example)",
+            "meta": "2015 — 2018"
+          },
+          {
+            "primary": "Google Ads Search certification",
+            "secondary": "Google Skillshop",
+            "meta": "Renewed yearly"
+          },
+          {
+            "primary": "Google Analytics",
+            "secondary": "GA4 & reporting",
+            "meta": "Ongoing"
+          }
+        ]
+      }
+    ]
+  },
   "metrics": {
     "ariaLabel": "Numbers",
     "items": [
@@ -85,28 +138,29 @@
   },
   "why": {
     "heading": "Why brands work with Zain",
-    "lead": "One person who understands ads, search, code and design means no hand-offs and no finger pointing.",
+    "lead": "You get one person from ad click to live site — clear updates, no layers.",
     "reasons": [
       {
-        "title": "One team for the whole funnel",
-        "description": "The ad, the landing page and the tracking are planned together."
+        "title": "Same person end to end",
+        "description": "Campaigns, pages and tracking planned together."
       },
       {
-        "title": "Built for speed and search",
-        "description": "Every site ships with clean markup, fast load times and SEO basics done."
+        "title": "Fast, searchable sites",
+        "description": "Clean builds that load quickly and rank better."
       },
       {
-        "title": "Reporting you can read",
-        "description": "Plain monthly numbers: spend, leads and what changed."
+        "title": "Numbers you understand",
+        "description": "Simple monthly reports: spend, leads, what moved."
       },
       {
-        "title": "Direct access",
-        "description": "You talk to the person doing the work, with replies within a day."
+        "title": "Quick replies",
+        "description": "Direct answers — usually within a day."
       }
     ]
   },
   "clients": {
-    "heading": "Clients and the work we did for them",
+    "heading": "My clients",
+    "lead": "Selected work — names anonymised where needed.",
     "rows": [
       {
         "name": "Client name one",

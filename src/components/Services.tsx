@@ -1,6 +1,7 @@
 import type { SiteContent } from "@/types/site";
 import { Container } from "@/components/Container";
 import { ServiceIcon } from "@/components/ServiceIcon";
+import { cn } from "@/lib/cn";
 
 type Props = {
   services: SiteContent["services"];
@@ -14,13 +15,16 @@ export function Services({ services }: Props) {
           {services.heading}
         </h2>
         <p className="mt-3.5 max-w-[560px] text-muted">{services.lead}</p>
-        <div className="mt-12 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
-          {services.items.map((item) => (
+        <div className="mt-12 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
+          {services.items.map((item, i) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-2xl border border-border bg-surface"
+              className={cn(
+                "service-float-card group overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-shadow duration-300 hover:shadow-md",
+                `service-float-delay-${Math.min(i, 5)}`,
+              )}
             >
-              <div className="grid aspect-8/5 place-items-center bg-tint">
+              <div className="grid aspect-8/5 place-items-center bg-tint transition-colors duration-300 group-hover:bg-tint/90">
                 <ServiceIcon icon={item.icon} />
               </div>
               <div className="px-[22px] pt-5 pb-6">

@@ -52,9 +52,7 @@ export function Hero({ hero, marquee }: Props) {
           </span>{" "}
           {hero.suffix}
         </h1>
-        <p className="mt-6 mb-8 max-w-[520px] text-lg text-muted">
-          {hero.description}
-        </p>
+        <p className="mt-6 mb-8 max-w-[520px] text-lg text-muted">{hero.description}</p>
         <div className="flex flex-wrap gap-3">
           <ButtonLink href={hero.primaryCta.href} variant="solid">
             {hero.primaryCta.label}
