@@ -16,12 +16,23 @@ export function Testimonials({ testimonials }: Props) {
         <h2 className="max-w-[640px] font-display text-[clamp(30px,4vw,44px)] leading-[1.1] font-bold tracking-tight">
           {testimonials.heading}
         </h2>
-        <div className="mt-12 grid grid-cols-1 gap-5 min-[821px]:grid-cols-[1.3fr_1fr]">
+        <div className="mt-12 grid grid-cols-1 gap-5 min-[821px]:grid-cols-[1.3fr_1fr] min-[821px]:grid-rows-2">
           {featured && (
-            <QuoteCard testimonial={featured} featured className="min-[821px]:row-span-2" />
+            <QuoteCard
+              testimonial={featured}
+              featured
+              className="min-[821px]:col-start-1 min-[821px]:row-start-1 min-[821px]:row-end-3"
+            />
           )}
-          {rest.map((t) => (
-            <QuoteCard key={t.initials} testimonial={t} />
+          {rest.map((t, i) => (
+            <QuoteCard
+              key={`${t.initials}-${t.name}`}
+              testimonial={t}
+              className={cn(
+                i === 0 && "min-[821px]:col-start-2 min-[821px]:row-start-1",
+                i === 1 && "min-[821px]:col-start-2 min-[821px]:row-start-2",
+              )}
+            />
           ))}
         </div>
       </Container>
@@ -41,21 +52,28 @@ function QuoteCard({
   return (
     <figure
       className={cn(
-        "flex flex-col justify-between gap-7 rounded-2xl border border-border bg-surface p-8",
-        featured &&
-          "border-accent bg-accent text-on-accent max-[820px]:row-auto",
+        "flex flex-col justify-between gap-7 rounded-2xl border p-8",
+        featured
+          ? "border-accent bg-accent text-on-accent max-[820px]:row-auto"
+          : "border-border bg-surface",
         className,
       )}
     >
       <blockquote
         className={cn(
-          "font-display text-[19px] leading-normal font-medium tracking-tight",
-          featured && "text-[clamp(24px,3vw,34px)] leading-[1.25]",
+          "font-display text-[19px] leading-normal font-medium tracking-tight text-text",
+          featured &&
+            "text-[clamp(24px,3vw,34px)] leading-[1.25] text-on-accent",
         )}
       >
         &ldquo;{testimonial.quote}&rdquo;
       </blockquote>
-      <figcaption className="flex items-center gap-3 text-[15px]">
+      <figcaption
+        className={cn(
+          "flex items-center gap-3 text-[15px]",
+          featured && "text-on-accent",
+        )}
+      >
         <i
           className={cn(
             "grid h-[42px] w-[42px] place-items-center rounded-full font-display text-[15px] font-bold not-italic",
@@ -66,7 +84,7 @@ function QuoteCard({
         >
           {testimonial.initials}
         </i>
-        <span>
+        <span className={cn(!featured && "text-text")}>
           {testimonial.name}
           <small
             className={cn(

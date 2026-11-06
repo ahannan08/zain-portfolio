@@ -1,6 +1,7 @@
 import type { SiteContent } from "@/types/site";
 import { Container } from "@/components/Container";
 import { ServiceIcon } from "@/components/ServiceIcon";
+import { ServicesAvatar } from "@/components/ServicesAvatar";
 import { cn } from "@/lib/cn";
 
 type Props = {
@@ -11,10 +12,17 @@ export function Services({ services }: Props) {
   return (
     <section id="services" className="py-24 max-[820px]:py-16">
       <Container>
-        <h2 className="max-w-[640px] font-display text-[clamp(30px,4vw,44px)] leading-[1.1] font-bold tracking-tight">
-          {services.heading}
-        </h2>
-        <p className="mt-3.5 max-w-[560px] text-muted">{services.lead}</p>
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h2 className="max-w-[640px] font-display text-[clamp(30px,4vw,44px)] leading-[1.1] font-bold tracking-tight">
+              {services.heading}
+            </h2>
+            <p className="mt-3.5 max-w-[560px] text-muted">{services.lead}</p>
+          </div>
+          <div className="flex justify-center md:shrink-0 md:justify-end">
+            <ServicesAvatar />
+          </div>
+        </div>
         <div className="mt-12 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
           {services.items.map((item, i) => (
             <article
