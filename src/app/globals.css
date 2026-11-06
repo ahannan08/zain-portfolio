@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: #f7faf9;
+  --color-surface: #ffffff;
+  --color-border: #e1e8e5;
+  --color-text: #0b1f1a;
+  --color-muted: #5b6f68;
+  --color-accent: #047857;
+  --color-tint: #e3f0eb;
+  --color-on-accent: #ffffff;
+  --color-stat: #6ee7b7;
+  --color-stat-label: #a7c4ba;
+  --color-quote-sub: #c6e8dc;
+  --font-display: var(--font-bricolage), system-ui, sans-serif;
+  --font-body: var(--font-instrument), system-ui, sans-serif;
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+@utility font-body {
+  font-family: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@keyframes marquee-slide {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-slide 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+.group:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Hero banner background */
+.hero-bg-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--color-border) 70%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-border) 70%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 85% 75% at 50% 35%, black 15%, transparent 72%);
+}
+
+@keyframes hero-float-a {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-4%, 6%) scale(1.06);
+  }
+  66% {
+    transform: translate(3%, -4%) scale(0.96);
+  }
+}
+
+@keyframes hero-float-b {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(8%, 5%) scale(1.08);
+  }
+}
+
+@keyframes hero-float-c {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-6%, -8%) rotate(3deg);
+  }
+}
+
+@keyframes hero-float-d {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  40% {
+    transform: translate(-5%, 4%) scale(1.1);
+  }
+  80% {
+    transform: translate(4%, -3%) scale(0.92);
+  }
+}
+
+.hero-orb {
+  will-change: transform;
+}
+
+.hero-orb-a {
+  animation: hero-float-a 22s ease-in-out infinite;
+}
+
+.hero-orb-b {
+  animation: hero-float-b 28s ease-in-out infinite;
+}
+
+.hero-orb-c {
+  animation: hero-float-c 26s ease-in-out infinite;
+}
+
+.hero-orb-d {
+  animation: hero-float-d 18s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-orb-a,
+  .hero-orb-b,
+  .hero-orb-c,
+  .hero-orb-d {
+    animation: none;
+  }
+}

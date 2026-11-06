@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Zain | Google Ads, SEO, Web and UI/UX",
+    "description": "Ads, SEO, websites and design under one roof — every click lands on a page built to convert."
+  },
+  "brand": {
+    "name": "Zain",
+    "email": "hello@example.com",
+    "copyright": "© 2026 Zain. All rights reserved."
+  },
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Services", "href": "#services" },
+    { "label": "Clients", "href": "#clients" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Contact me", "href": "#contact", "variant": "solid" }
+  ],
+  "hero": {
+    "prefix": "We build",
+    "suffix": "that grow your business.",
+    "description": "Ads, SEO, websites and design under one roof, so every click lands on a page built to convert.",
+    "rotatingWords": [
+      { "text": "Google Ads", "color": "#047857" },
+      { "text": "SEO", "color": "#0E7490" },
+      { "text": "websites", "color": "#4D7C0F" },
+      { "text": "UI/UX", "color": "#0F766E" },
+      { "text": "campaigns", "color": "#047857" }
+    ],
+    "primaryCta": { "label": "Start a project", "href": "#contact" },
+    "secondaryCta": { "label": "See our work", "href": "#projects" }
+  },
+  "marquee": [
+    "Google Ads",
+    "SEO",
+    "Website development",
+    "UI/UX design",
+    "Digital marketing",
+    "Analytics"
+  ],
+  "services": {
+    "heading": "Everything your brand needs to get found and chosen",
+    "lead": "Six services, one team, one set of goals.",
+    "items": [
+      {
+        "icon": "google-ads",
+        "title": "Google Ads",
+        "description": "Search and display campaigns tuned for cost per lead, not clicks."
+      },
+      {
+        "icon": "seo",
+        "title": "SEO",
+        "description": "Technical fixes, content and links that earn lasting rankings."
+      },
+      {
+        "icon": "website",
+        "title": "Website development",
+        "description": "Fast, responsive Next.js sites that are easy to update."
+      },
+      {
+        "icon": "ui-ux",
+        "title": "UI/UX design",
+        "description": "Clean, tested interfaces that guide people to the next step."
+      },
+      {
+        "icon": "digital-marketing",
+        "title": "Digital marketing",
+        "description": "Social, email and content plans that work with your ads."
+      },
+      {
+        "icon": "analytics",
+        "title": "Analytics and tracking",
+        "description": "Clear dashboards so you see which spend brings revenue."
+      }
+    ]
+  },
+  "metrics": {
+    "ariaLabel": "Numbers",
+    "items": [
+      { "value": 40, "suffix": "+", "label": "Clients served" },
+      { "value": 6, "suffix": "+", "label": "Years of experience" },
+      { "value": 12, "suffix": "", "label": "Certifications" },
+      { "value": 120, "suffix": "+", "label": "Projects delivered" }
+    ]
+  },
+  "why": {
+    "heading": "Why brands work with Zain",
+    "lead": "One person who understands ads, search, code and design means no hand-offs and no finger pointing.",
+    "reasons": [
+      {
+        "title": "One team for the whole funnel",
+        "description": "The ad, the landing page and the tracking are planned together."
+      },
+      {
+        "title": "Built for speed and search",
+        "description": "Every site ships with clean markup, fast load times and SEO basics done."
+      },
+      {
+        "title": "Reporting you can read",
+        "description": "Plain monthly numbers: spend, leads and what changed."
+      },
+      {
+        "title": "Direct access",
+        "description": "You talk to the person doing the work, with replies within a day."
+      }
+    ]
+  },
+  "clients": {
+    "heading": "Clients and the work we did for them",
+    "rows": [
+      {
+        "name": "Client name one",
+        "work": "Google Ads and landing page",
+        "result": "Cut cost per lead by 38% in three months."
+      },
+      {
+        "name": "Client name two",
+        "work": "Website redesign and SEO",
+        "result": "Organic traffic up 2.4x in six months."
+      },
+      {
+        "name": "Client name three",
+        "work": "UI/UX design for a web app",
+        "result": "Sign-up completion improved from 41% to 63%."
+      },
+      {
+        "name": "Client name four",
+        "work": "Full digital marketing",
+        "result": "Doubled monthly enquiries within a quarter."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "What clients say after the first quarter",
+    "items": [
+      {
+        "quote": "Our ads, site and tracking finally worked as one system. Leads doubled and we knew exactly why.",
+        "initials": "AK",
+        "name": "Client name one",
+        "role": "Founder, Company name",
+        "featured": true
+      },
+      {
+        "quote": "The new site loads fast and we moved onto page one for our main keywords within months.",
+        "initials": "SR",
+        "name": "Client name two",
+        "role": "Marketing lead, Company name",
+        "featured": false
+      },
+      {
+        "quote": "Clear reports, quick replies and design that our customers actually compliment.",
+        "initials": "MT",
+        "name": "Client name three",
+        "role": "Director, Company name",
+        "featured": false
+      }
+    ]
+  },
+  "footer": {
+    "heading": "Have a project in mind?",
+    "lead": "Tell me what you're building and I'll reply within one working day.",
+    "pagesHeading": "Pages",
+    "pages": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Clients", "href": "#clients" }
+    ],
+    "socialHeading": "Elsewhere",
+    "social": [
+      { "label": "LinkedIn", "href": "#" },
+      { "label": "Instagram", "href": "#" },
+      { "label": "GitHub", "href": "#" }
+    ]
+  }
+}
